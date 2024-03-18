@@ -4,7 +4,7 @@ public class Code02_08 {
         String str2 = "자바";
 
         System.out.print(str1);
-        System.out.print(str2);
+        System.out.println(str2);
 
         String result = str1 + str2;
 
