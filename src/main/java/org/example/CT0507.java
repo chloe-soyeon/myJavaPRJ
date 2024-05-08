@@ -10,7 +10,6 @@ public class CT0507 {
         for (int i = 0; i < 5; i++) {
             array[i] = s.nextInt();
         }
-
         int minIndex = 0;
         int temp = 0;
         for (int k = 0; k < 4; k++) {
@@ -23,7 +22,6 @@ public class CT0507 {
             temp = array[minIndex];
             array[minIndex]= array[k];
             array[k]=temp;
-
 
         }
         for (int k=0 ; k<5; k++){
