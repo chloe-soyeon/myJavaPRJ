@@ -3,6 +3,7 @@ package chapter08;
 import java.util.Scanner;
 
 public class Code09_02 {
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int[] numAry = new int[4]; //나는 4개 숫자를 저장한다
