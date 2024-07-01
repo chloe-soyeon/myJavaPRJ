@@ -1,6 +1,7 @@
 package chapter08;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ListExam {
@@ -28,5 +29,17 @@ public class ListExam {
         //람다식 표현방법 (성능은 비슷하나, 코드 길이가 더 짦음) 별도의 데이터 타입을 정의하지 않아도 됨!!!
         System.out.println("3세대 반복문");
         list.forEach( name -> System.out.println("이름 : " + name)); //list안의 값의 하나씩 꺼내서 -> 출력하라
+
+        System.out.println("4세대 반복문");
+        list.parallelStream().forEach(name -> System.out.println("이름 : " + name));
+
+        System.out.println("1.5세대 반복문");
+        Iterator<String> it = list.iterator();
+
+        while (it.hasNext()) {
+            String name = it.next();
+            System.out.println("이름 : " + name);
+        }
+
     }
 }
